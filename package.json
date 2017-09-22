@@ -1,17 +1,25 @@
 {
-  "name": "starwars-express",
+  "name": "bamazon",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "dependencies": {
-    "body-parser": "^1.15.0",
-    "express": "^4.13.4"
-  },
-  "devDependencies": {},
+  "description": "![cat](https://static.pexels.com/photos/126407/pexels-photo-126407.jpeg)",
+  "main": "bamazon.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soniabradley/Bamazon.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soniabradley/Bamazon/issues"
+  },
+  "homepage": "https://github.com/soniabradley/Bamazon#readme",
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "inquirer": "^3.3.0",
+    "mysql": "^2.14.1",
+    "sql": "^0.78.0"
+  }
 }

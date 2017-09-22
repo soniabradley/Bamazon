@@ -3,7 +3,7 @@ var mysql = require("mysql");
 var Table = require("cli-table");
 var inquirer = require("inquirer");
 
-// sql connection
+// create connection (information) for the sql database
 var connection = mysql.createConnection({
   host: "localhost",
   port: 3306,
@@ -32,7 +32,7 @@ var start = function () {
     // add all of the rows to the cli-table
     for (var i = 0; i < res.length; i++) {
       // table is Array, so you can push
-      console.log([res[i].ItemID, res[i].ProductName, res[i].DepartmentName, res[i].stock, res[i].StockQuantity]);
+      console.log([res[i].ItemID, res[i].ProductName, res[i].DepartmentName, res[i].Price, res[i].StockQuantity]);
     }
     promptCustomer(res);
   })
@@ -45,7 +45,7 @@ var promptCustomer = function (res) {
     {
       type: 'input',
       name: 'choice',
-      message: "What would you like to purchase? [Quit with Q]"
+      message: "What would you like to purchase?"
     }])
 
   .then(function (answer) {
@@ -78,7 +78,7 @@ var promptCustomer = function (res) {
                 connection.query('UPDATE Products SET StockQuantity = StockQuantity - ? WHERE ProductName = ?',
                   [answer.quantity, product],
                   function (err, res2) {
-                    console.log("Product Bought");
+                    console.log("Product In Stock");
                     start();
                   }
                 );
