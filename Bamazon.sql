@@ -12,7 +12,8 @@ CREATE TABLE Products (
     PRIMARY KEY (ItemID)
 );
 
-
+-- SELECT * bamazon_db.Products ?
+SELECT * FROM Products;
 
 INSERT INTO Products (ProductName, DepartmentName, Price, StockQuantity)
 VALUES ('Lavender Cloud', 'Paint', 49.99, 50),
@@ -20,14 +21,13 @@ VALUES ('Lavender Cloud', 'Paint', 49.99, 50),
         ('Siberian Iris', 'Paint', 59.99, 48),
         ('Petasites Japonicus', 'Plants', 9.99, 215),
         ('Astilboides Tabularis', 'Plants', 12.49, 116),
-        ('Rheum Palmatum', 'Plants', 8.00, 10),
+        ('Rheum Palmatum', 'Plants', 8.99, 10),
         ('Fruit-and-Nut Cookies', 'Food', 3.49, 73),
-        ('Chocolate Monkey Bars', 'Food', 5.00, 112),
+        ('Chocolate Monkey Bars', 'Food', 4.99, 112),
         ('Orange-Almond Bars', 'Food', 2.99, 60),
-        ('Diamond Ring', 'Jewelry', 2400.00, 1);
+        ('Diamond Ring', 'Jewelry', 300.00, 1);
 
--- may also use bamazon.Products
-SELECT * FROM  Products;
+
 
 UPDATE 
 INSERT
