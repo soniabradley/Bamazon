@@ -1,13 +1,13 @@
-DROP DATABASE IF EXISTS Bamazon;
-CREATE database Bamazon;
+DROP DATABASE IF EXISTS bamazon_db;
+CREATE database bamazon_db;
 
-USE Bamazon;
+USE bamazon_db;
 
 CREATE TABLE Products (
     ItemID INTEGER AUTO_INCREMENT NOT NULL,
     ProductName VARCHAR(50) NOT NULL,
     DepartmentName VARCHAR(50) NOT NULL,
-    Price DECIMAL (10, 2) NOT NULL,
+    Price DECIMAL (10,2) NOT NULL,
     StockQuantity INTEGER(10) NOT NULL,
     PRIMARY KEY (ItemID)
 );
@@ -26,6 +26,7 @@ VALUES ('Lavender Cloud', 'Paint', 49.99, 50),
         ('Orange-Almond Bars', 'Food', 2.99, 60),
         ('Diamond Ring', 'Jewelry', 2400.00, 1);
 
+-- may also use bamazon.Products
 SELECT * FROM  Products;
 
 UPDATE 

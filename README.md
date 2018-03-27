@@ -1,6 +1,6 @@
 # Bamazon
 
-![cat](https://static.pexels.com/photos/126407/pexels-photo-126407.jpeg)
+Amazon like store using Inquirer, MySql and Node which will take in orders from customers and deplete store inventory.
 
 
 ![Terminal](BamazonTerminal.png)
